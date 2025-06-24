@@ -10,12 +10,12 @@ def add_todo():
     st.session_state["new_todo"] = ""  # Clear the input field after adding
 
 st.title("Web Todo App")
-st.subheader("A simple todo app")
+# st.subheader("A simple todo app")
 # note the use of unsafe_allow_html=True to allow HTML formatting.
 # Only st.write supports this.
-st.write("A simple todo app to use <b>anywhere, anytime</b>.", 
-             unsafe_allow_html=True, 
-             divider="blue")
+# st.write("A simple todo app to use <b>anywhere, anytime</b>.", 
+             # unsafe_allow_html=True, 
+            #  divider="blue")
 
 st.text_input("Add a new todo", placeholder="todo...", key="new_todo", on_change=add_todo)
 
